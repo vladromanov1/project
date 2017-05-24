@@ -1,0 +1,406 @@
+object Form1: TForm1
+  Left = 193
+  Height = 623
+  Top = 49
+  Width = 1040
+  Caption = 'Form1'
+  ClientHeight = 623
+  ClientWidth = 1040
+  Color = clWhite
+  OnCreate = FormCreate
+  LCLVersion = '1.6.0.4'
+  object GroupBox1: TGroupBox
+    Left = 16
+    Height = 376
+    Top = 72
+    Width = 296
+    Caption = 'Поиск'
+    ClientHeight = 356
+    ClientWidth = 292
+    Font.Color = clBlue
+    ParentFont = False
+    TabOrder = 0
+    object ComboBox1: TComboBox
+      Left = 32
+      Height = 23
+      Top = 8
+      Width = 226
+      Font.Color = clBackground
+      ItemHeight = 15
+      Items.Strings = (
+        'Romanov '
+        'Chibyshev'
+        'Ivanov '
+        'Sidorov'
+        'Petrov'
+        'Decteryov'
+        'Gagarina'
+        'Bazhenov'
+        'Lekomceva'
+        'Babikov'
+        'Ivanov'
+        'Ananasov'
+        'Persik'
+        'Navalniy'
+        'Ivanov'
+        'Romanov'
+        'Petrov'
+        'Anoshina'
+        'Chuvashov'
+        'Danilova'
+      )
+      OnChange = ComboBox1Change
+      ParentFont = False
+      Style = csDropDownList
+      TabOrder = 0
+    end
+    object Button1: TButton
+      Left = 32
+      Height = 34
+      Top = 296
+      Width = 96
+      Caption = 'Найти'
+      OnClick = Button1Click
+      TabOrder = 1
+    end
+    object Button2: TButton
+      Left = 162
+      Height = 34
+      Top = 296
+      Width = 96
+      Caption = 'Сбросить'
+      OnClick = Button2Click
+      TabOrder = 2
+    end
+    object ComboBox2: TComboBox
+      Left = 32
+      Height = 23
+      Top = 48
+      Width = 226
+      ItemHeight = 15
+      Items.Strings = (
+        'Vladislav'
+        'Dmitriy'
+        'Ivan'
+        'Sergey'
+        'Petr'
+        'Andrey'
+        'Vera'
+        'Grigoriy'
+        'Marina'
+        'Anton'
+        'Nikita'
+        'Anton'
+        'Alex'
+        'Artemiy'
+        'Akakiy'
+        'Alexandr'
+        'Liza'
+        'Mihail'
+        'Sonya'
+        ''
+      )
+      Style = csDropDownList
+      TabOrder = 3
+    end
+    object ComboBox3: TComboBox
+      Left = 32
+      Height = 23
+      Top = 96
+      Width = 226
+      ItemHeight = 15
+      Items.Strings = (
+        'Viktorovich'
+        'Nikolaevich'
+        'Ivanovich'
+        'Alekseevich'
+        'Dmitrievich'
+        'Vladimirovich'
+        'Alekseevna'
+        'Valereevich'
+        'Abrikosovich'
+        'Sergeevich'
+        'Nikitich'
+        'Olegovich'
+        'Anatolevna'
+        'Pavlovna'
+      )
+      Style = csDropDownList
+      TabOrder = 4
+    end
+    object ComboBox4: TComboBox
+      Left = 32
+      Height = 23
+      Top = 144
+      Width = 226
+      ItemHeight = 15
+      Items.Strings = (
+        'A001AA'
+        'B011BB'
+        'K111KK'
+        'T207AB'
+        'K826AT'
+        'E666KT'
+        'B100AK'
+        'T012EO'
+        'K720TO'
+        'A352OK'
+        'M708HK'
+        'H807MT'
+        'A055MB'
+        'B066AO'
+        'A077EO'
+        'E120TO'
+        'T132HM'
+        'M321AB'
+        'K564TK'
+        'B765AB'
+      )
+      Style = csDropDownList
+      TabOrder = 5
+    end
+    object ComboBox5: TComboBox
+      Left = 32
+      Height = 23
+      Top = 200
+      Width = 226
+      ItemHeight = 15
+      Items.Strings = (
+        'WBAKM21050C22YC45'
+        'WDD2120831A10AH72'
+        'WB372J501CV22YC45'
+        'WVWWWW1K0BWN97G10'
+        'XW8AJ6NE7EN123U72'
+        'WM0AB53E78H64KL72'
+        'SAJAA06M29F01RT82'
+        'X9FDXXEE5DE834U54'
+        'NCJBA95FD4FG5TY74'
+        'ZH1VI13SA65P99R01'
+        'Z94CT41D3FR44WO59'
+        '1C4PJMCB0EW11JL01'
+        '1C4HJWBG5GL08RW11'
+        'V64TY83H065WE1X89'
+        'X7LLSRB23CH890F52'
+        'SB1BP56L50E67JK55'
+        'BW23LF6HJ957C16Y78'
+        'WAUZZZ4H1EN348N65'
+        'XWEFU411UD0K7QE20'
+        'SALWA2EF2EA90IO12'
+      )
+      Style = csDropDownList
+      TabOrder = 6
+    end
+  end
+  object GroupBox2: TGroupBox
+    Left = 338
+    Height = 176
+    Top = 400
+    Width = 560
+    ClientHeight = 156
+    ClientWidth = 556
+    TabOrder = 1
+    object DBGrid1: TDBGrid
+      Left = 0
+      Height = 146
+      Top = 0
+      Width = 552
+      AutoFillColumns = True
+      Color = clWindow
+      Columns = <>
+      DataSource = DataSource3
+      TabOrder = 0
+    end
+  end
+  object Label1: TLabel
+    Left = 312
+    Height = 89
+    Top = -16
+    Width = 212
+    Caption = 'ГИБДД'
+    Font.Color = clBlue
+    Font.Height = -67
+    ParentColor = False
+    ParentFont = False
+  end
+  object GroupBox3: TGroupBox
+    Left = 336
+    Height = 168
+    Top = 72
+    Width = 560
+    Caption = 'Паспорт водителя'
+    ClientHeight = 148
+    ClientWidth = 556
+    TabOrder = 2
+    object DBGrid2: TDBGrid
+      Left = 0
+      Height = 144
+      Top = 0
+      Width = 552
+      AutoFillColumns = True
+      Color = clWindow
+      Columns = <>
+      DataSource = DataSource1
+      TabOrder = 0
+    end
+  end
+  object GroupBox4: TGroupBox
+    Left = 338
+    Height = 162
+    Top = 234
+    Width = 560
+    Caption = 'Паспорт транспортного средства'
+    ClientHeight = 142
+    ClientWidth = 556
+    TabOrder = 3
+    object DBGrid3: TDBGrid
+      Left = 0
+      Height = 136
+      Top = 0
+      Width = 552
+      AutoFillColumns = True
+      Color = clWindow
+      Columns = <>
+      DataSource = DataSource2
+      TabOrder = 0
+    end
+  end
+  object Button3: TButton
+    Left = 920
+    Height = 25
+    Top = 208
+    Width = 75
+    Caption = 'Tabl1'
+    OnClick = Button3Click
+    TabOrder = 4
+  end
+  object Button4: TButton
+    Left = 920
+    Height = 25
+    Top = 368
+    Width = 75
+    Caption = 'Tabl2'
+    OnClick = Button4Click
+    TabOrder = 5
+  end
+  object Button5: TButton
+    Left = 920
+    Height = 25
+    Top = 560
+    Width = 75
+    Caption = 'Tabl3'
+    OnClick = Button5Click
+    TabOrder = 6
+  end
+  object MySQL55Connection1: TMySQL55Connection
+    Connected = True
+    LoginPrompt = False
+    AfterConnect = MySQL55Connection1AfterConnect
+    DatabaseName = 'bd_vlad'
+    KeepConnection = False
+    Params.Strings = (
+      'Port=3306'
+    )
+    Password = 'root'
+    Transaction = SQLTransaction1
+    UserName = 'root'
+    HostName = '127.0.0.1'
+    Options = []
+    left = 912
+    top = 88
+  end
+  object SQLTransaction1: TSQLTransaction
+    Active = True
+    Database = MySQL55Connection1
+    Options = []
+    left = 992
+    top = 88
+  end
+  object SQLQuery1: TSQLQuery
+    FieldDefs = <>
+    Database = MySQL55Connection1
+    Transaction = SQLTransaction1
+    Options = []
+    Params = <>
+    left = 912
+    top = 160
+  end
+  object DataSource1: TDataSource
+    DataSet = SQLQuery1
+    left = 992
+    top = 160
+  end
+  object MySQL55Connection2: TMySQL55Connection
+    Connected = False
+    LoginPrompt = False
+    DatabaseName = 'bd_vlad'
+    KeepConnection = False
+    Params.Strings = (
+      'Port=3306'
+    )
+    Password = 'root'
+    Transaction = SQLTransaction2
+    UserName = 'root'
+    HostName = '127.0.0.1'
+    Options = []
+    left = 912
+    top = 248
+  end
+  object SQLTransaction2: TSQLTransaction
+    Active = False
+    Database = MySQL55Connection2
+    Options = []
+    left = 992
+    top = 248
+  end
+  object SQLQuery2: TSQLQuery
+    FieldDefs = <>
+    Database = MySQL55Connection2
+    Transaction = SQLTransaction2
+    Options = []
+    Params = <>
+    left = 992
+    top = 312
+  end
+  object DataSource2: TDataSource
+    DataSet = SQLQuery2
+    left = 912
+    top = 312
+  end
+  object SQLQuery3: TSQLQuery
+    FieldDefs = <>
+    Database = MySQL55Connection3
+    Transaction = SQLTransaction3
+    Options = []
+    Params = <>
+    left = 912
+    top = 416
+  end
+  object SQLTransaction3: TSQLTransaction
+    Active = False
+    Database = MySQL55Connection3
+    Options = []
+    left = 912
+    top = 496
+  end
+  object MySQL55Connection3: TMySQL55Connection
+    Connected = False
+    LoginPrompt = False
+    DatabaseName = 'bd_vlad'
+    KeepConnection = False
+    Params.Strings = (
+      'Port=3306'
+    )
+    Password = 'root'
+    Transaction = SQLTransaction3
+    UserName = 'root'
+    HostName = '127.0.0.1'
+    Options = []
+    left = 992
+    top = 416
+  end
+  object DataSource3: TDataSource
+    DataSet = SQLQuery3
+    left = 992
+    top = 496
+  end
+end
